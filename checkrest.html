@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="restcssfolder/rest.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-white questions my-3 d-flex justify-content-between rounded-lg">
+            <div class="col-8 my-3"><small>Where in the world?</small>
+            </div>
+
+            <div class="col-4 my-3">
+                <i class="fa fa-moon-o" style="font-size:18px; color: rgba(255,255,255, 1);"></i>
+                <small> Dark Mode
+                </small>
+            </div>
+        </div>
+
+        <div class="row row1 d-flex justify-content-between text-white p-0 m-0">
+
+            <div class="col-xs-12 col-md-4 questions rounded-sm search">
+                <i class="fa fa-search" style="font-size:12px; color: rgba(255,255,255, 1); margin-right: 10px"></i>
+                <input type="text" name="country" placeholder="Search for a country">
+            </div>
+
+
+            <div class="col-xs-12 col-md-2 offset  custom-select" style="width: 200px; background-color: rgba(32,45,54,1); border: none">
+
+                <select id="continents">
+
+                    <option value="" hidden>
+                        <small>Filter by region</small>
+                    </option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-between" id="flagg"></div>
+    </div>
+    <script src="jsfolder/main.js">
+        //
+
+    </script>
+</body>
+
+</html>

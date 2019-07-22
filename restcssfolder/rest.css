@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(32, 45, 54);
+}
+.questions,
+input[type=text] {
+    background-color: rgb(43, 55, 67);
+}
+.question {
+    background-color: rgb(43, 55, 67);
+    /*    background-color: yellowgreen;*/
+    margin-bottom: 14px;
+    /*    width: 300px;*/
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+div p b {
+    margin-bottom: 9px;
+}
+
+/*
+#flagg {
+    display: i;
+}
+*/
+
+.custom-select {
+    position: relative;
+    top: 30px;
+    right: 13px;
+}
+.custom-select select {
+    background-color: rgb(32, 45, 54);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 3px;
+    width: 120px;
+    font-size: 13px;
+    border: none;
+}
+div img {
+    height: 150px;
+    width: 260px;
+}
+select option {
+    font-size 13pt;
+}
+#flagg {
+    text-align: center;
+}
+select option p {
+    font-size: 10pt;
+}
+p {
+    font-size: 10px;
+    text-align: left;
+}
+.flaginfo {
+    height: 80px;
+    width: 200px;
+}
+.search {
+    height: 40px;
+    text-align: left;
+}
+.row1 {
+    height: 100px;
+    important;
+}
+input[type=text] {
+    border: none;
+}
+.offset {
+    z-index: 1;
+    position: relative;
+    left: 61px;
+    top: -2;
+    box-shadow: 1px 1px 1px black;
+}
+@media screen and (max-width: 450px) {
+    .offset {
+        position: relative;
+        left: -20px;
+    }
+}
+@media screen and (max-width: 450px) {
+    select option {
+        font-size: 9pt;
+    }
+}

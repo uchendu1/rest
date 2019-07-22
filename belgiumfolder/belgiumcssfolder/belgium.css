@@ -1,0 +1,26 @@
+        body {
+            background-color: rgb(32, 45, 54);
+        }
+        .questions,
+        input[type=text] {
+            background-color: rgb(43, 55, 67);
+        }
+        .box {
+            box-shadow: 1px 2px 2px black;
+        }
+        .flag {
+            background-color: red;
+            height: 190;
+            width: 300;
+        }
+        p {
+            font-size: 10px;
+            line-height: 20px
+        }
+        div p b {
+            font-size: 19px;
+        }
+        .borde {
+            background-color: rgb(43, 55, 67);
+            border: none;
+        }
