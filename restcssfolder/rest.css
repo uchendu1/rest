@@ -1,5 +1,6 @@
 body {
     background-color: rgb(32, 45, 54);
+    font-family: nunito-sans;
 }
 .questions,
 input[type=text] {
@@ -14,6 +15,9 @@ input[type=text] {
 ::placeholder {
     color: white;
     opacity: 1;
+}
+input {
+    color: white;
 }
 div p b {
     margin-bottom: 9px;

@@ -1,13 +1,10 @@
 $(document).ready(function () {
-    //    var name = value_in_the_country_search_input_field
     $.ajax({
         url: "https://restcountries.eu/rest/v2/all"
 
     }).then(function (linda) {
         var limit = 8;
         var data = linda.slice(0, limit);
-
-        console.log(data);
 
         var regionData = removeDuplicatesBy(x => x.region, data);
 
@@ -23,18 +20,25 @@ $(document).ready(function () {
         console.log(error);
     });
 
-    // start from here
-    // add id to input field 
-    // https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+    $('#countrySearch').on("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
 
-    //        $.ajax({
-    //            url: "https://restcountries.eu/rest/v2/name/" + name,
-    //                  type: 'POST'
-    //        }).then(function (data) {
-    //            console.log(data);
-    //        }).catch(function (error) {
-    //            console.log(error);
-    //        });
+                var name = $('#countrySearch').val();
+
+                $.ajax({
+                            url: "https://restcountries.eu/rest/v2/name/" + name,
+                            type: 'POST',
+                            crossdomain: true
+            }).then(function (data) {
+                console.log(data);
+            }).catch(function (error) {
+                console.log(error);
+            });
+
+        }
+
+    });
 });
 
 function removeDuplicatesBy(keyFn, array) {
